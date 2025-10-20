@@ -7,7 +7,7 @@ import { DataContext } from "../Dataprovider/Dataprovider";
 import { Type } from "../../Utility/action.Type";
 
 function ProductCard({ product, flex = false, renderDesc = false, renderAdd = true }) {
-  const [state, dispatch] = useContext(DataContext);
+  const { state, dispatch } = useContext(DataContext); // ✅ use object destructuring
   const { basket = [] } = state;
 
   if (!product) return null;

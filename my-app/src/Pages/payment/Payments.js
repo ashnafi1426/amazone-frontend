@@ -12,7 +12,8 @@ import { doc, setDoc, collection } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import { Type } from "../../Utility/action.Type";
 const Payment = () => {
-  const [{ user, basket },dispatch] = useContext(DataContext);
+const { state, dispatch } = useContext(DataContext);
+const { user, basket } = state;
   const totalItem = basket?.reduce((amount, item) => {
     return item.amount + amount;
   }, 0);

@@ -6,22 +6,16 @@ import { auth } from "./Utility/firebase";
 import { Type } from "./Utility/action.Type";
 
 function App() {
-  // eslint-disable-next-line no-unused-vars
-  const [_, dispatch] = useContext(DataContext); // ✅ Correct destructuring
+  const { dispatch } = useContext(DataContext);
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
-      if (authUser) {
-        dispatch({
-          type: Type.SET_USER,
-          user: authUser,
-        });
-      } else {
-        dispatch({
-          type: Type.SET_USER,
-          user: null,
-        });
-      }
+      dispatch({
+        type: Type.SET_USER,
+        user: authUser || null,
+      });
     });
+
     return () => unsubscribe();
   }, [dispatch]);
 

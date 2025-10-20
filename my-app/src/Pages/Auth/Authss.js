@@ -14,7 +14,7 @@ const Authss = () => {
     signIn: false,
     signUp: false,
   }); 
-  const [dispatch] = useContext(DataContext);
+  const {state,dispatch} = useContext(DataContext);
   const navigate = useNavigate();
   const navStateData = useLocation();
 
