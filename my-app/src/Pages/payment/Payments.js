@@ -45,7 +45,7 @@ const { user, basket } = state;
   }
   try {
     const amount = Math.round(total * 100); // ensure it's an integer
-const response = await axiosInstance.post(`/payment/create?total=${amount}`);
+const response = await axiosInstance.post(`${process.env.REACT_APP_BACKEND_URL}/payment/create?total=${amount}`);
     const clientSecret = response.data?.clientSecret;
     if (!clientSecret) {
       throw new Error("Client secret not received from backend.");
