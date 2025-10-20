@@ -1,0 +1,142 @@
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f1111;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+.fixed{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo_container img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.delivery p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.delivery span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+  max-width: 700px;
+  height: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+  margin: 0 10px;
+}
+
+.search select {
+  padding: 5px;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 14px;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.search svg {
+  background-color: #febd69;
+  padding: 10px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.language_selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.language_selector img {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+}
+
+.account_container,
+.returns_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.account_container p,
+.returns_container p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.account_container span,
+.returns_container span {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.cart_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart_container svg {
+  font-size: 28px;
+  color: white;
+}
+
+.cart_count {
+  position: absolute;
+  top: -8px;
+  left: 16px;
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cart_text {
+  margin-left: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Optional: Remove underline from all links */
+.header_container a {
+  text-decoration: none;
+  color: inherit;
+}
+

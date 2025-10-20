@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.hero__img {
+  position: fixed;
+}
+.hero__img::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 225, 225, 0),
+    rgba(225, 225, 225)
+  );
+}

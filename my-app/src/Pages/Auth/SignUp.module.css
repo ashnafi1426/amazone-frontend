@@ -1,0 +1,118 @@
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+}
+.login_box {
+  width: 380px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+.login_logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 120px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  background: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+ button:hover {
+  background: var(--primary-shade);
+}
+.create{
+width: 100%;
+  margin-top: 30px;
+  border:none;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;  
+}
+.terms {
+  font-size: 12px;
+  margin-top: 15px;
+  color: #111;
+}
+
+.terms a {
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.help_link {
+  display: block;
+  margin: 15px 0;
+  font-size: 13px;
+  color: #0066c0;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+.business_text {
+  font-size: 13px;
+  font-weight: 600;
+}
+.business_link {
+  font-size: 13px;
+  color: #0066c0;
+  text-decoration: none;
+}
+
+.business_link:hover {
+  text-decoration: underline;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+}
+footer a {
+  color: #0066c0;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

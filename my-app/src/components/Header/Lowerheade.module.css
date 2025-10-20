@@ -1,0 +1,55 @@
+/* Lower Header Styles */
+.lower_header {
+    background-color: #232f3e;
+    color: white;
+    padding: 0 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+.menu_item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.menu_item:hover {
+    border: 1px solid white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .lower_header {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu_item {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+    .menu_item:not(:first-child) {
+        display: none; /* Hide all except "All" on mobile */
+    }
+}
